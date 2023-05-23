@@ -65,7 +65,7 @@ The model binary we got from google, whose pipeline we are trying to implement i
 
 When our trained model will be converted to tflite version, there is a possibility of significant accuracy drop. This can be avoided by post-training quantization using the Tensorflow pipeline itself, implemented very similar to Google’s pipeline.
 
-I used the Reduce LR on Plateau learning rate scheduler. Experiments were carried out with Exponential LR, Reduce LR on Plateau and no LR schedulers. Reduce LR on Plateau gave the best results. This is opposite to Abhinav's & Dinesh’s PyTorch versions.
+I used the Reduce LR on Plateau learning rate scheduler. Experiments were carried out with Exponential LR, Reduce LR on Plateau and no LR schedulers. Reduce LR on Plateau gave the best results. This is opposite to A's & D’s PyTorch versions.
 
 The loss we used was Mean Squared Error (MSE) and metric Mean Euclidean Distance (MED) was defined as
 
